@@ -1,0 +1,13 @@
+{
+  "name": "kasoko-safaris-tours",
+  "version": "1.0.3",
+  "private": true,
+  "description": "Static Tanzania travel website with a Node.js booking request function.",
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "build": "node scripts/build-static.mjs",
+    "test:api": "node qa/bookings.test.mjs"
+  }
+}

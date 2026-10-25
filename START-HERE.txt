@@ -1,0 +1,40 @@
+KASOKO SAFARIS & TOURS - IMAGES READY
+
+This package contains 96 files in total, including folders' contents.
+All 56 photographs are ordinary JPEG files in assets/photos.
+The largest individual file is less than 0.5 MB.
+
+PREVIEW
+1. Extract the ZIP into a NEW empty folder.
+2. Open kasoko-travels.
+3. Double-click index.html. Photos and listing pages work immediately.
+
+No Node.js installation or photo unpacking is needed for this preview.
+Internet access is still needed for maps, external links and booking delivery.
+Local preview can review requests, but only the deployed API can deliver them.
+
+GITHUB UPLOAD
+1. Open your repository's root page and choose Add file > Upload files.
+2. Select EVERYTHING INSIDE kasoko-travels, including assets, api, scripts and qa.
+3. Drag the selection onto GitHub, wait for all 96 files, then commit changes.
+4. If the repository requires a pull request, merge it before deployment.
+
+Keep index.html, package.json and vercel.json at the repository root.
+The build creates all 49 individual listing pages automatically. Their data
+is in detail-pages.js. Keep that file and detail-loader.js in the upload.
+
+VERCEL
+Framework Preset: Other
+Root Directory: empty when the files are at the repository root
+Build Command: node scripts/build-static.mjs
+Output Directory: public
+Node.js Version: 24.x
+Install Command: empty
+
+The included vercel.json supplies the build settings. Keep existing
+BOOKING_WEBHOOK_URL and BOOKING_WEBHOOK_SECRET environment variables.
+
+If you run npm run build locally, exclude its generated public folder from
+GitHub browser uploads. Vercel generates that folder automatically.
+
+See README.md for editing information and QA-NOTES.md for verification.
